@@ -1,0 +1,275 @@
+<% include ./inc/header %>
+
+<!-- [ Pre-loader ] end -->
+<div id="pcoded" class="pcoded">
+    <div class="pcoded-overlay-box"></div>
+    <div class="pcoded-container navbar-wrapper">
+        <!-- [ Header ] start -->
+        <% include ./inc/topHeader %>
+        
+
+        <!-- [ chat message ] start -->
+        <!-- [ chat message ] end -->
+
+
+        <div class="pcoded-main-container">
+            <div class="pcoded-wrapper">
+                <!-- [ navigation menu ] start -->
+                <% include ./inc/sidebar %>
+                
+                <!-- [ navigation menu ] end -->
+                <div class="pcoded-content">
+                    <!-- [ breadcrumb ] start -->
+                    <div class="page-header card" style="background: #fff;padding: 20px;box-shadow: 0 0 5px 0 rgba(43,43,43,0.1),0 11px 6px -7px rgba(43,43,43,0.1);">
+                        <div class="row align-items-end">
+                            <div class="col-lg-8">
+                                <div class="page-header-title">
+                                    <i class="feather icon-home bg-c-blue"></i>
+                                    <div class="d-inline">
+                                        <h5>Slider </h5>
+                                        <span>lorem ipsum dolor sit consectetur adipisicing elit </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="page-header-breadcrumb">
+                                    <ul class=" breadcrumb breadcrumb-title">
+                                        <li class="breadcrumb-item">
+                                            <a href="/slider"><i class="feather icon-home"></i></a>
+                                        </li>
+                                        <li class="breadcrumb-item"><a href="#!">Slider </a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- [ breadcrumb ] end -->
+                    <div class="pcoded-inner-content">
+                        <div class="main-body">
+                            <div class="page-wrapper">
+                                <div class="page-body">
+                                    <!-- [ page content ] start -->
+                                    <div class="row">
+
+                                        <!-- sale revenue card start -->
+                                        
+                                       
+                                        
+                                        
+                                        
+                                    <div class="col-xl-12 col-md-12">
+                                        <div class="card table-card">
+                                            <div class="card-header">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Slider Add</button>
+                                                <% include ./partials/messages %>
+                                                <!-- MODEL  -->
+                                                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                                      <div class="modal-content modal-lg">
+                                                        <form id="main" method="post" action="/slider/add" novalidate="" enctype="multipart/form-data">
+                                                        <div class="modal-header">
+                                                          <h5 class="modal-title" id="exampleModalLongTitle">Slider Add</h5>
+                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                          </button>
+                                                        </div>
+
+                                                        <div class="modal-body">
+                                                            <div class="form-group row">
+                                                                <label class="col-sm-3 col-form-label">Full Name</label>
+                                                                <div class="col-sm-9">
+                                                                    <input type="text" class="form-control" name="fullName" id="name" placeholder="Name">
+                                                                    <span class="messages"></span>
+                                                                </div>
+                                                                </div>
+                                                            <div class="form-group row">
+                                                                <label class="col-sm-3 col-form-label">Email</label>
+                                                                <div class="col-sm-9">
+                                                                    <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                                                                    <span class="messages"></span>
+                                                                </div>
+                                                                </div>
+                                                            <div class="form-group row">
+                                                                <label class="col-sm-3 col-form-label">Mobile</label>
+                                                                <div class="col-sm-9">
+                                                                    <input type="text" class="form-control" name="mobile" id="name" placeholder="Mobile">
+                                                                    <span class="messages"></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label class="col-sm-3 col-form-label">City</label>
+                                                                <div class="col-sm-9">
+                                                                    <input type="text" class="form-control" name="city" id="name" placeholder="Mobile">
+                                                                    <span class="messages"></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label class="col-sm-3 col-form-label">Images</label>
+                                                                <div class="col-sm-9">
+                                                                    <input type="file" class="form-control" name="file" >
+                                                                    <span class="messages"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            <button type="submit" class="btn btn-primary">Save changes</button>
+                                                        </div>
+
+                                                    </form>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                <!-- MODEL END  -->
+                                                <div class="card-header-right">
+                                                    <ul class="list-unstyled card-option">
+                                                        <li class="first-opt"><i class="feather icon-chevron-left open-card-option"></i></li>
+                                                        <li><i class="feather icon-maximize full-card"></i></li>
+                                                        <li><i class="feather icon-minus minimize-card"></i></li>
+                                                        <li><i class="feather icon-refresh-cw reload-card"></i></li>
+                                                        <li><i class="feather icon-trash close-card"></i></li>
+                                                        <li><i class="feather icon-chevron-left open-card-option"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="card-block">
+                                                <div class="table-responsive">
+                                                    <table class="table table-hover m-b-0">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Sl</th>
+                                                                <th>Name </th>
+                                                                <th>Email </th>
+                                                                <th>Mobile </th>
+                                                                <th>City </th>
+                                                                <th>Image </th>
+                                                                <th>Status </th>
+                                                                <th>Action </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+
+                                                            <% for(var i = 0; i < list.length; i++ ) { %>
+
+                                                            <tr>
+                                                                <td> <%= i + 1 %> </td>
+                                                                <td> <%= list[i].fullName %> </td>
+                                                                <td> <%= list[i].email %> </td>
+                                                                <td> <%= list[i].mobile %> </td>
+                                                                <td> <%= list[i].city %> </td>
+                                                                <td><img src="../uploads/<%= list[i].image %>" alt="" class="img-fluid img-50"></td>
+                                                                <td>
+                                                                    <a href="/turn/<%= list[i]._id %>">
+                                                                        <div class="p-status <%= list[i].status ? 'bg-c-green' : 'bg-c-red' %>"></div>
+                                                                    </a>
+                                                                </td>
+                                                                <td>
+                                                                    <a href="#!" data-toggle="modal" data-target="#editModel<%= list[i].id %>">
+                                                                        <i class="icon feather icon-edit f-w-600 f-16 m-r-15 text-c-green"></i>
+                                                                    </a>
+                                                                    <a href="/delete/<%= list[i].id %>" onclick="return confirm('Are you sure to Delete Gas Package Info.. ?')">
+                                                                        <i class="feather icon-trash-2 f-w-600 f-16 text-c-red"></i>
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+
+                                                            <div class="modal fade" id="editModel<%= list[i].id %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                                                  <div class="modal-content modal-lg">
+                                                                    <form id="main" method="POST" action="/edit/<%= list[i]._id %>" novalidate="" enctype="multipart/form-data">
+                                                                        <div class="modal-header">
+                                                                          <h5 class="modal-title" id="exampleModalLongTitle"><%= list[i].fullName %></h5>
+                                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true">&times;</span>
+                                                                          </button>
+                                                                        </div>
+                
+                                                                        <div class="modal-body">
+                                                                            <div class="form-group row">
+                                                                                <label class="col-sm-3 col-form-label">Full Name</label>
+                                                                                <div class="col-sm-9">
+                                                                                    <input type="text" class="form-control" name="fullName" id="name" value="<%= list[i].fullName %>" />
+                                                                                    <span class="messages"></span>
+                                                                                </div>
+                                                                                </div>
+                                                                            <div class="form-group row">
+                                                                                <label class="col-sm-3 col-form-label">Email</label>
+                                                                                <div class="col-sm-9">
+                                                                                    <input type="email" class="form-control" name="email" id="email" value="<%= list[i].email %>" />
+                                                                                    <span class="messages"></span>
+                                                                                </div>
+                                                                                </div>
+                                                                            <div class="form-group row">
+                                                                                <label class="col-sm-3 col-form-label">Mobile</label>
+                                                                                <div class="col-sm-9">
+                                                                                    <input type="text" class="form-control" name="mobile" id="name" value="<%= list[i].mobile %>" />
+                                                                                    <span class="messages"></span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group row">
+                                                                                <label class="col-sm-3 col-form-label">City</label>
+                                                                                <div class="col-sm-9">
+                                                                                    <input type="text" class="form-control" name="city" id="name" value="<%= list[i].city %>" />
+                                                                                    <span class="messages"></span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group row">
+                                                                                <label class="col-sm-3 col-form-label">Images</label>
+                                                                                <div class="col-sm-9">
+                                                                                    <input type="file" class="form-control" name="file" >
+                                                                                    <span class="messages"></span>
+                                                                                </div>
+                                                                            </div>
+                                                                            
+                                                                        </div>
+
+
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                            <button type="submit" class="btn btn-primary">Save changes</button>
+                                                                        </div>
+                
+                                                                    </form>
+
+                                                                        
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+
+                                                            <% } %>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- MODEL  -->
+                                    
+                                    <!-- MODEL END  -->
+                                        
+                                        
+                                        
+                                        <!-- sale revenue card end -->
+
+                                        <!-- lettest acivity and statustic card start -->
+
+                                        <!-- lettest acivity and statustic card end -->
+
+                                    </div>
+                                    <!-- [ page content ] end -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- [ style Customizer ] start -->
+                <div id="styleSelector">
+                </div>
+                <!-- [ style Customizer ] end -->
+            </div>
+        </div>
+    </div>
+</div>
+<% include ./inc/footer %>
